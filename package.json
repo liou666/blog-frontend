@@ -1,0 +1,34 @@
+{
+  "name": "blog-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "auth": "liou",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@types/react-router-dom": "^5.3.3",
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
+    "eslint": "^8.13.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "vite-tsconfig-paths": "^3.4.1"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "@vitejs/plugin-react": "^1.0.7",
+    "react-helmet-async": "^1.2.3",
+    "react-router-dom": "^6.3.0",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.0"
+  }
+}
