@@ -1,3 +1,29 @@
+:root {
+  --main-color: #000;
+  --bg-color: #fff;
+  --text-color: #374751;
+  --hover-color: #23527c;
+  --nav-hover-color: rgba(255, 255, 255, .8);
+  --nav-text-color: #fff;
+  --nav-fixed-text-color: #000;
+  font-size: 10px;
+  /* transition: 10s; */
+}
+
+:root.dark {
+  --main-color: #fff;
+  --bg-color: #111;
+  --text-color: #e5e7eb;
+  --hovers-color: #23527c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +36,61 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+a.nav {
+  color: var(--nav-text-color);
+  transition: color .3s;
+}
+
+a.nav:hover {
+  color: var(--nav-hover-color);
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -15px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.wh-100 {
+  width: 100%;
+  height: 100%;
 }
