@@ -70,12 +70,15 @@
 
 /* 底部区域 */
 .main_layout footer {
-    font-size: 20px;
-    padding: 50px 0 65px;
+    font-size: 14px;
     text-align: center;
+    margin-bottom: 0;
     color: var(--text-color);
 }
 
+.main_layout footer .copyright a {
+    color: #337ab7;
+}
 
 @media screen and (min-width: 768px) {
     .main_layout header {

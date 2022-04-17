@@ -53,6 +53,11 @@ hr {
   border-top: 1px solid #eee;
 }
 
+footer {
+  font-size: 20px;
+  padding: 50px 0 65px
+}
+
 h1,
 h2,
 h3,
