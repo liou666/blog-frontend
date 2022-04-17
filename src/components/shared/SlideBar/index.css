@@ -1,4 +1,64 @@
 .slide_bar_wrap {
   color: #bfbfbf;
-  font-size: 14px;
+  /* width: 150%; */
+  /* font-size: 14px; */
+}
+
+.slide_bar_wrap .about_me_section {
+  display: none;
+}
+
+.slide_bar_wrap a:hover {
+  border-color: #0085a1 !important;
+  color: #0085a1 !important;
+}
+
+
+.slide_bar_wrap h4 {
+  color: gray;
+  padding-bottom: 1em;
+}
+
+.slide_bar_wrap h4 a {
+  color: gray !important;
+  text-decoration: none;
+}
+
+.tags a {
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, .8);
+  border-radius: 999em;
+  padding: 0 10px;
+  /* color: #fff; */
+  color: #bfbfbf;
+  line-height: 24px;
+  font-size: 12px;
+  text-decoration: none;
+  margin: 0 1px;
+  margin-bottom: 6px;
+  border-color: #bfbfbf;
+}
+
+.about_me img {
+  width: 80%;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 20px;
+
+}
+
+@media only screen and (min-width: 768px) {
+  .tags a {
+    margin-right: 5px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .slide_bar_wrap {
+    width: 150%;
+  }
+
+  .slide_bar_wrap .about_me_section {
+    display: block;
+  }
 }

@@ -34,6 +34,7 @@
     line-height: 1.1;
     font-weight: 700;
     transition: 0.3s;
+    margin-top: 10;
     margin-bottom: unset;
 }
 
@@ -63,8 +64,8 @@
 .main_layout .slide_bar {
     color: #bfbfbf;
     font-size: 14px;
-    display: none;
-    background-color: blueviolet;
+    /* display: none; */
+    /* background-color: blueviolet; */
 }
 
 /* 底部区域 */
@@ -97,13 +98,25 @@
     }
 
     .main_layout .slide_bar {
-        width: 220px;
+        width: 240px;
         display: block;
+        padding-right: 5%;
     }
 }
 
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
     .main_layout .slide_bar {
         padding-right: 5%;
+    }
+} */
+
+@media screen and (max-width: 992px) {
+    .main_layout .container {
+        padding: 0px;
+    }
+
+    .main_layout main {
+        display: flex;
+        flex-direction: column;
     }
 }

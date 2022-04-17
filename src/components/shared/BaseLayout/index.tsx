@@ -44,8 +44,8 @@ export default function BaseLayout ({ children, title, subheading, slideBar }: L
         </div>
       </header>
       <main>
-        <div className="container">{children}</div>
-        <div className="slide_bar">
+        <div className="container px-15">{children}</div>
+        <div className="slide_bar px-15">
           {slideBar}
         </div>
       </main>
