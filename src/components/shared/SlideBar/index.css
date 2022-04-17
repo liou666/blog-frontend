@@ -24,18 +24,8 @@
   text-decoration: none;
 }
 
-.tags a {
-  display: inline-block;
-  border: 1px solid rgba(255, 255, 255, .8);
-  border-radius: 999em;
-  padding: 0 10px;
-  /* color: #fff; */
+.slide_bar_wrap .tags a {
   color: #bfbfbf;
-  line-height: 24px;
-  font-size: 12px;
-  text-decoration: none;
-  margin: 0 1px;
-  margin-bottom: 6px;
   border-color: #bfbfbf;
 }
 
@@ -47,11 +37,7 @@
 
 }
 
-@media only screen and (min-width: 768px) {
-  .tags a {
-    margin-right: 5px;
-  }
-}
+
 
 @media only screen and (min-width: 992px) {
   .slide_bar_wrap {

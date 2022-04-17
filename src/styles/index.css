@@ -98,6 +98,27 @@ a.nav:hover {
   color: var(--nav-hover-color);
 }
 
+.tags a {
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, .8);
+  border-radius: 999em;
+  padding: 0 10px;
+  color: #fff;
+  line-height: 24px;
+  font-size: 12px;
+  text-decoration: none;
+  margin: 0 5px 0 0;
+  margin-bottom: 6px;
+}
+
+.tags a:hover {
+  border-color: #0085a1;
+}
+
+.link_color {
+  color: #0085a1;
+  ;
+}
 
 .row {
   display: flex;
