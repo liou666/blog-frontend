@@ -6,6 +6,7 @@ const Loading = () => (<p> Loading...</p>)
 
 const IndexScreen = lazy(() => import('@/components/screen/Home'))
 const Page404Screen = lazy(() => import('@/components/screen/404'))
+const Archive = lazy(() => import('@/components/screen/Archive'))
 
 export const Router = () => {
   return (
@@ -23,7 +24,7 @@ const InnerRouter = () => {
     },
     {
       path: '/archive',
-      element: <IndexScreen />
+      element: <Archive />
     },
     {
       path: '/tags',

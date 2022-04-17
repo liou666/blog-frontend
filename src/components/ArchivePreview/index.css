@@ -1,0 +1,16 @@
+.archive_preview {}
+
+.archive_preview .archive_time {
+  color: black;
+  margin-right: 6px;
+  font-family: auto;
+}
+
+.archive_preview>a {
+  color: #404040;
+}
+
+.archive_preview>a:hover {
+  text-decoration: none;
+  color: #0085a1;
+}
