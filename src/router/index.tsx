@@ -8,6 +8,7 @@ const IndexScreen = lazy(() => import('@/components/screen/Home'))
 const Page404Screen = lazy(() => import('@/components/screen/404'))
 const Archive = lazy(() => import('@/components/screen/Archive'))
 const Tags = lazy(() => import('@/components/screen/Tags'))
+const Detail = lazy(() => import('@/components/screen/Detail'))
 
 export const Router = () => {
   return (
@@ -30,6 +31,10 @@ const InnerRouter = () => {
     {
       path: '/tags',
       element: <Tags />
+    },
+    {
+      path: '/detail/:id',
+      element: <Detail />
     },
     {
       path: '*',

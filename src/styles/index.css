@@ -7,6 +7,7 @@
   --nav-text-color: #fff;
   --nav-fixed-text-color: #000;
   font-size: 10px;
+  scroll-behavior: smooth;
   /* transition: 10s; */
 }
 
