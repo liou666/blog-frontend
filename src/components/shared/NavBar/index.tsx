@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Outlet, NavLink, useNavigate } from 'react-router-dom'
 
-import { useScroll } from '@/hooks'
+import useScroll from '@/hooks/useScroll'
 import Collaps from '@/components/shared/Collaps'
 
 import './index.css'

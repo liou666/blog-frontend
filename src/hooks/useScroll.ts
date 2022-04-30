@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react'
+
 type Scroll = {
   isScrollUp: boolean,
   isTop:boolean
 }
 
 // 页面向上滚动时触发
-export const useScroll = (): Scroll => {
+const useScroll = (): Scroll => {
   const [isScrollUp, setIsScrollUp] = useState(false)
   const [oldScrollTop, setOldScrollTop] = useState(0)
   const [isTop, setIsTop] = useState(true)
@@ -26,3 +27,4 @@ export const useScroll = (): Scroll => {
   }, [oldScrollTop])
   return { isScrollUp, isTop }
 }
+export default useScroll
