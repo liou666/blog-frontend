@@ -9,6 +9,7 @@ const Page404Screen = lazy(() => import('@/components/screen/404'))
 const Archive = lazy(() => import('@/components/screen/Archive'))
 const Tags = lazy(() => import('@/components/screen/Tags'))
 const Detail = lazy(() => import('@/components/screen/Detail'))
+const Resource = lazy(() => import('@/components/screen/Resource'))
 
 export const Router = () => {
   return (
@@ -35,6 +36,10 @@ const InnerRouter = () => {
     {
       path: '/detail/:id',
       element: <Detail />
+    },
+    {
+      path: '/resource',
+      element: <Resource />
     },
     {
       path: '*',
