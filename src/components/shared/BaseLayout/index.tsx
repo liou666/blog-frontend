@@ -9,7 +9,10 @@ type LayoutProps = {
   title: string
   subheading?: string
   slideBar?: React.ReactNode,
-  topHeight?: number
+  topHeight?: number,
+  headerContent?: React.ReactNode,
+  headerClassName?: string,
+  mainClassName?: string,
 }
 const navLists = [
   {
@@ -32,19 +35,22 @@ const navLists = [
 
 const NAV_TITLE = 'Blog Of Liou'
 
-export default function BaseLayout ({ children, title, subheading, slideBar, topHeight }: LayoutProps) {
+export default function BaseLayout ({ mainClassName, headerClassName, headerContent, children, title, subheading, slideBar, topHeight }: LayoutProps) {
   return (
     <div className="main_layout">
-      <header style={{ height: topHeight && `${topHeight}px` }}>
+      <header className={headerClassName} style={{ height: topHeight && `${topHeight}px` }}>
         <NavBar navTitle={NAV_TITLE} navLists={navLists} />
         <div className="h-100">
-          <div className="site_heading flex flex-column flex-center h-100">
+          {
+            headerContent || <div className="site_heading flex flex-column flex-center h-100">
             <h1 className="page_title">{title}</h1>
             <span className="subheading">{subheading}</span>
           </div>
+          }
+
         </div>
       </header>
-      <main>
+      <main className={mainClassName}>
         <div style={{ width: slideBar ? '100%' : '85%' }} className="container px-15">{children}</div>
         {
           slideBar && (

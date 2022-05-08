@@ -64,7 +64,7 @@
 .main_layout .slide_bar {
     color: #bfbfbf;
     font-size: 14px;
-    /* display: none; */
+    display: none;
     /* background-color: blueviolet; */
 }
 
