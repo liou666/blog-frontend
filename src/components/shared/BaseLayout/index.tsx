@@ -51,7 +51,7 @@ export default function BaseLayout ({ mainClassName, headerClassName, headerCont
         </div>
       </header>
       <main className={mainClassName}>
-        <div style={{ width: slideBar ? '100%' : '85%' }} className="container px-15">{children}</div>
+        <div className="container px-15">{children}</div>
         {
           slideBar && (
             <div className="slide_bar px-15">{slideBar}</div>)
