@@ -1,16 +1,7 @@
-import instance from './instance'
+import api from '@/api/request'
+import type{ Post, PageInfo, SuccessResponse, PostResponse } from 'types'
 
-export const get = async (url: string, params?: any) => {
-  const res = await instance.get(url, { params })
-  return res.data
-}
-
-export const post = async (url: string, payload?: any) => {
-  const res = await instance.post(url, payload)
-  return res.data
-}
-
-export default {
-  get,
-  post
+// 获取文章列表
+export const getBlogList = (params?:PageInfo):Promise<SuccessResponse<PostResponse>> => {
+  return api.get('/list', params)
 }

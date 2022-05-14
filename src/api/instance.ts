@@ -20,7 +20,7 @@ instance.interceptors.request.use(
 instance.interceptors.response.use(
   response => {
     // 请求成功
-    return response.data
+    return response
   }
   , err => {
     // 请求失败
