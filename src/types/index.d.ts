@@ -8,17 +8,26 @@ export type Post = {
   [key: string]: any
 }
 
+export type label = {
+  name: string
+  children: Array<{
+    title: string
+    id: number
+    subtitle:string
+  }>
+}
+
 export type PostResponse = {
   data: Post[]
   total: number
 }
 
 export type PageInfo = {
-  pageSize: number,
+  pageSize: number
   pageNum: number
 }
 
-export interface BaseResponse {
+interface BaseResponse {
   code: number
 }
 export interface ErrorResponse extends BaseResponse {

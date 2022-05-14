@@ -1,17 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import './index.css'
+import type { label } from '@/types'
+import { getLabelList } from '@/api'
+
 export default function SlideBar () {
+  const [labelList, setLabelList] = useState<label[]>([])
+  const navigate = useNavigate()
+  useEffect(() => {
+    getLabelList().then(res => {
+      if (res.code === 0) {
+        setLabelList(res.data)
+      }
+    })
+  }, [])
   return (
     <div className="slide_bar_wrap">
       <section>
         <hr />
         <h4><a href="">FEATURED TAGS</a></h4>
         <div className="tags">
-          <a href="#">算法</a>
-          <a href="#">算法</a>
-          <a href="#">性能有哈時尚大方</a>
-          <a href="#">性能有哈時尚大方</a>
-          <a href="#">算法</a>
+          {labelList.map((x) => {
+            return <a key={x.name} onClick={() => navigate(`/tags#${x.name}`)}>{x.name}</a>
+          })}
         </div>
       </section>
       <section className="about_me_section">
