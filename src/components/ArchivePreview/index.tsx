@@ -1,12 +1,20 @@
 import React from 'react'
 import './index.css'
 
-export default function ArchivePreview () {
+import { formatDate } from '@/utils'
+
+type ArchivePreviewProps = {
+  title: string
+  createTime: string
+  clickAction?: () => void
+}
+
+export default function ArchivePreview ({ title, createTime, clickAction }: ArchivePreviewProps) {
   return (
     <React.Fragment>
       <div className="archive_preview">
-        <span className="archive_time">[March 2, 2022] </span>
-        <a href="">计算机网络总结</a>
+        <span className="archive_time">{`[${formatDate(createTime)}]`} </span>
+        <a onClick={clickAction}>{title}</a>
       </div>
       <hr />
     </React.Fragment>

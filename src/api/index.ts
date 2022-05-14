@@ -10,3 +10,8 @@ export const getBlogList = (params?:PageInfo):Promise<SuccessResponse<PostRespon
 export const getLabelList = ():Promise<SuccessResponse<label[]>> => {
   return api.get('/label')
 }
+
+// 获取文章详情
+export const getBlogDetail = (id:string):Promise<SuccessResponse<Post>> => {
+  return api.get(`/list/${id}/`)
+}

@@ -4,6 +4,7 @@ export type Post = {
   title: string
   content: string
   sub_title?: string
+  label: string
   create_time: string
   [key: string]: any
 }
@@ -13,7 +14,7 @@ export type label = {
   children: Array<{
     title: string
     id: number
-    subtitle:string
+    subtitle: string
   }>
 }
 

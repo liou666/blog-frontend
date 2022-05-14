@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router'
 import './index.css'
 import type { label } from '@/types'
 import { getLabelList } from '@/api'
 import { getRandomColor } from '@/utils'
 
 export default function Tags () {
+  const navigate = useNavigate()
   const [labelList, setLabelList] = useState<label[]>([])
   const [colors, setColors] = useState<string[]>([])
   const TagBgColors = ['#70a5cf', '#bbbbee', '#0085a1']
@@ -53,7 +55,7 @@ export default function Tags () {
               {tag.children.map((child, index) => {
                 return (
                   <React.Fragment key={index}>
-                    <div className="tags_post_preview">
+                    <div onClick={() => { navigate(`/detail/${child.id}`) }} className="tags_post_preview">
                       <h2>{child.title}</h2>
                       <h3>{child.subtitle}</h3>
                     </div>

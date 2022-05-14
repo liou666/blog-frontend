@@ -3,7 +3,7 @@
 .archive_preview .archive_time {
   color: black;
   margin-right: 6px;
-  font-family: auto;
+  /* font-family: auto; */
 }
 
 .archive_preview>a {

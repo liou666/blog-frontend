@@ -6,7 +6,7 @@ import './layout.css'
 
 type LayoutProps = {
   children: React.ReactNode
-  title: string
+  title?: string
   subheading?: string
   slideBar?: React.ReactNode,
   topHeight?: number,
