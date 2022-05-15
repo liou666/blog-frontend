@@ -54,8 +54,10 @@ const useCatalog = (catalogWrapRef:RefObject<HTMLElement>, contentWrapRef:RefObj
   }
 
   React.useEffect(() => {
-    setCatalog(getCatalog())
-  }, [])
+    if (contentWrapRef && !catalog.length) {
+      setCatalog(getCatalog())
+    }
+  })
 
   React.useEffect(() => {
     if (typeof window !== 'undefined') {
