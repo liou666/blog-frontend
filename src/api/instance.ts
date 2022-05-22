@@ -1,8 +1,8 @@
 import axios, { AxiosInstance } from 'axios'
-const BASE_URL = import.meta.env.VITE_BASE_API
+// const BASE_URL = import.meta.env.VITE_BASE_API
 
 const instance:AxiosInstance = axios.create({
-  baseURL: `${BASE_URL}/v1/blog`,
+  baseURL: '/api',
   timeout: 5000
 })
 // 请求拦截器
