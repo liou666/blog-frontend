@@ -19,7 +19,7 @@
   margin: 20px 0 15px 0;
 }
 
-.tags_wrap .tags a {
+.tags_wrap .tags .tag_href {
   font-size: 14px;
   border: none;
   line-height: 28px;

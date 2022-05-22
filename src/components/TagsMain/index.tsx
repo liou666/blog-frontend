@@ -32,7 +32,7 @@ export default function Tags () {
     <div className="tags_wrap">
       <div className="tags">
         {labelList.map((tag, index) => (
-          <a href={`#${tag.name}`} key={tag.name} style={{ background: colors[index] }}>
+          <a className="tag_href" href={`#${tag.name}`} key={tag.name} style={{ background: colors[index] }}>
             {tag.name}
           </a>
         ))}
